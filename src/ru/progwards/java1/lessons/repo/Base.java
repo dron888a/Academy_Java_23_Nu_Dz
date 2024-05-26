@@ -39,7 +39,7 @@ public class Base {
         System.out.println("Вызвана функция calculation() с параметрами " +
                 A_EQUALS + a + ", " + B_EQUALS + b + ", " + C_EQUALS + c);
         System.out.println("a + b + c = " + addition(addition(a, b), c));
-        System.out.println("a^3 = " + multiplication(multiplication(a, a),a));
+        System.out.println("a^3 = " + multiplication(multiplication(a, a), a));
         System.out.println("a - (b + c^2) = " +
                 subtraction(a, addition(b, multiplication(c, c))));
     }
