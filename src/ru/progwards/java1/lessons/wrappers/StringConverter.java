@@ -1,7 +1,5 @@
 package ru.progwards.java1.lessons.wrappers;
 
-import javax.xml.transform.Result;
-
 public class StringConverter {
     public static String fromByte(byte number) {
         return Byte.toString(number);
