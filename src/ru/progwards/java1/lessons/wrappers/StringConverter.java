@@ -42,18 +42,16 @@ class NumMetrics {
         return int1 * int2 * int3;
     }
 
-class AccuracyDoubleFloat {
+static class AccuracyDoubleFloat {
 
     public static Double volumeBallDouble(Double radius) {
         float pi = 3.14f;
-        Double V = (4.0 / 3.0) * pi * (radius * radius * radius);
-        return V;
+        return (4.0 / 3.0) * pi * (radius * radius * radius);
     }
 
     public static Float volumeBallFloat(Float radius) {
         float pi = 3.14f;
-        Float V = (4.0f / 3.0f) * pi * (radius * radius * radius);
-        return V;
+        return (4.0f / 3.0f) * pi * (radius * radius * radius);
     }
 
     public static Double calculateAccuracy(Double radius) {
@@ -69,14 +67,14 @@ class AccuracyDoubleFloat {
 
         System.out.println(StringConverter.fromByte((byte) 42));
         System.out.println(StringConverter.fromShort((short) 15));
-        System.out.println(StringConverter.fromInt((int) 12));
-        System.out.println(StringConverter.fromLong((long) 454545));
-        System.out.println(StringConverter.fromFloat((float) 5.0f));
-        System.out.println(StringConverter.fromDouble((double) 8.0));
-        System.out.println(NumMetrics.sumDigits((Integer) 456));
-        System.out.println(NumMetrics.mulDigits((Integer) 456));
-        System.out.println(AccuracyDoubleFloat.volumeBallDouble((Double) 6371.2));
-        System.out.println(AccuracyDoubleFloat.volumeBallFloat((Float) 6371.2f));
-        System.out.println(AccuracyDoubleFloat.calculateAccuracy((Double) 6371.2));
+        System.out.println(StringConverter.fromInt(12));
+        System.out.println(StringConverter.fromLong(454545));
+        System.out.println(StringConverter.fromFloat(5.0f));
+        System.out.println(StringConverter.fromDouble(8.0));
+        System.out.println(NumMetrics.sumDigits(456));
+        System.out.println(NumMetrics.mulDigits(456));
+        System.out.println(AccuracyDoubleFloat.volumeBallDouble(6371.2));
+        System.out.println(AccuracyDoubleFloat.volumeBallFloat(6371.2f));
+        System.out.println(AccuracyDoubleFloat.calculateAccuracy(6371.2));
     }
 }
