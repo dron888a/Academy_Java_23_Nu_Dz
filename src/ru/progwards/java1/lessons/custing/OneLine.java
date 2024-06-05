@@ -38,10 +38,8 @@ class AccuracyDoubleFloat {
 }
 
 class Figures {
-    static float pi = 3.14f; // Сразу присваиваем переменной pi значение 3.14 типа float . Обязательно static
-                            // для видимости
-
     public static double circle(double r) {
+        double pi = 3.14; // Исправил значение pi на double было float
         return pi * (r * r); // Площадь круга с радиусом R
     }
 
@@ -68,11 +66,11 @@ class Figures {
     }
 
     public static void main(String[] args) {
-        System.out.println(circle(8.0));
+        System.out.println(circle(25.12377937195896));
         System.out.println(square(7.0));
         System.out.println(triangle(4.0));
         System.out.println(squareVsTraiange(5.0));
-        System.out.println(squareVsCircle(3.0));
-        System.out.println(triangleVsCircle(9.0));
+        System.out.println(squareVsCircle(6.214624665283283));
+        System.out.println(triangleVsCircle(17.506718980204326));
     }
 }
