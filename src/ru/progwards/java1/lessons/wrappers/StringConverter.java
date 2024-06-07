@@ -45,7 +45,7 @@ class NumMetrics {
 public static class AccuracyDoubleFloat {
 
     public static Double volumeBallDouble(Double radius) {
-        float pi = 3.14f;
+        double pi = 3.14;
         return (4.0 / 3.0) * pi * (radius * radius * radius);
     }
 
