@@ -15,14 +15,13 @@ public class Divisibility {
                             num2 + " равен " + (num1 % num2));
                 }
             System.out.println("Частное от деления " + num1 + " на " + num2 +
-                    " равно " + (num1 / num2));
+                    " равно " + ((double)num1 / num2)); // исправил на тип double при делении,
+                                                        //   чтобы получить дробное значение
         }
     }
 
     public static void main(String[] args) {
-        check(10,2);
-        check(10,3);
-        check(10,0);
+        check(47,8);
     }
 }
 
