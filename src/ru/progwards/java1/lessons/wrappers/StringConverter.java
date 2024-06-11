@@ -59,15 +59,15 @@ class NumMetrics {
 
 class AccuracyDoubleFloat {
 
+    static double Pi = 3.14; // Объявление константы свойствами класса
+
     public static Double volumeBallDouble(Double radius) {
-        double Pi = 3.14;
         Double volumeDoubble = (4.0 / 3.0) * Pi * (radius * radius * radius); // Вычисление объема шара
         return volumeDoubble; // Возвращение объема
     }
 
     public static Float volumeBallFloat(Float radius) {
-        float Pi = 3.14f;
-        Float volumeFloat = (4.0f / 3.0f) * Pi * (float) (radius * radius * radius); // Вычисление объема шара
+        Float volumeFloat = (4.0f / 3.0f) * (float) Pi * (float) (radius * radius * radius); // Вычисление объема шара
         return volumeFloat; // Возвращение объема
     }
 
