@@ -75,15 +75,15 @@ class Goodies {
 }
 
 class Room {
-    private static double length1 = 5;
-    private static double width1 = 3;
-    private static double length2 = length1+1.5;
-    private static double width2 = width1*1.5;
-    private static double square1 = square(length1, width1);
-    private static double square2 = square(length2, width2);
-    public static double square(double length, double width) {
-        double s = length * width;
-        return s;
+    static double length1 = 5;
+    static double width1 = 3;
+    static double length2 = length1+1.5;
+    static double width2 = width1*1.5;
+    static double square1 = square(length1, width1);
+    static double square2 = square(length2, width2);
+
+    static double square(double length, double width) {
+        return length * width; // Вычисляем площадь комнаты
     }
     public static void printRoom(String name, double square) {
         System.out.println("Площадь " + name + " составляет " + square + " м2");
