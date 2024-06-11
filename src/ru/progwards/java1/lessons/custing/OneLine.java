@@ -26,7 +26,7 @@ public class OneLine {
 }
 
 class AccuracyDoubleFloat {
-    public static <f> double calculateAccuracy() {
+    public static double calculateAccuracy() {
         double d = 1.0 / 3.0;
         float f = (float) d;
         return d - f;
@@ -49,8 +49,7 @@ class Figures {
 
     public static Double triangle(double k) {
         double p = (k * 3) / 2; // По формуле Герона рассчитывается полупериметр p
-        double S = Math.sqrt(p * (p-k) * (p-k) * (p-k)); //По формуле Герона рассчитывается площадь S
-        return S; // Площадь треугольника
+        return Math.sqrt(p * (p-k) * (p-k) * (p-k)); // Площадь треугольника
     }
 
     public static double squareVsTraiange(double p) {
