@@ -2,8 +2,7 @@ package ru.progwards.java1.lessons.basics;
 
 class Distance3D {
     public static double distance(double x1, double y1,double z1, double x2, double y2, double z2) {
-        double AB = Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1) + (z2 - z1)*(z2 - z1));
-        return AB;
+        return Math.sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1) + (z2 - z1)*(z2 - z1));
     }
 }
 
@@ -17,11 +16,10 @@ class ReverseDigits {
 }
 
 class Astronomy {
-    public static final double Pi = 3.14;
+    static final double Pi = 3.14;
 
     public static Double sphereSquare(Double r) {
-        double S = 4 * Pi * (r * r);
-        return S;
+        return 4 * Pi * (r * r);
     }
 
     public static Double earthSquare() {
