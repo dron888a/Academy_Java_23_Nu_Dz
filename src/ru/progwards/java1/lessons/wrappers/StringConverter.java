@@ -26,12 +26,12 @@ public class StringConverter {
     }
 
     public static void main(String[] args) {
-        System.out.println(42);
-        System.out.println(15);
-        System.out.println(12);
-        System.out.println(454545);
-        System.out.println(5.0f);
-        System.out.println(8.0);
+        System.out.println(fromByte((byte) 10));
+        System.out.println(fromShort((short) 12));
+        System.out.println(fromInt(7));
+        System.out.println(fromLong(454545L));
+        System.out.println(fromFloat(5.0f));
+        System.out.println(fromDouble(5.0));
     }
 }
 
@@ -62,13 +62,11 @@ class AccuracyDoubleFloat {
     static double Pi = 3.14; // Объявление константы свойствами классапше git
 
     public static Double volumeBallDouble(Double radius) {
-        Double volumeDoubble = (4.0 / 3.0) * Pi * (radius * radius * radius); // Вычисление объема шара
-        return volumeDoubble; // Возвращение объема
+        return (4.0 / 3.0) * Pi * (radius * radius * radius); // Возвращение объема
     }
 
     public static Float volumeBallFloat(Float radius) {
-        Float volumeFloat = (4.0f / 3.0f) * (float) Pi * (float) (radius * radius * radius); // Вычисление объема шара
-        return volumeFloat; // Возвращение объема
+        return (4.0f / 3.0f) * (float) Pi * (radius * radius * radius); // Возвращение объема
     }
 
     public static Double calculateAccuracy(Double radius) {
