@@ -59,7 +59,7 @@ class NumMetrics {
 
 class AccuracyDoubleFloat {
 
-    static double Pi = 3.14; // Объявление константы свойствами классапше git
+    static final double Pi = 3.14; // Объявление константы свойствами классапше git
 
     public static Double volumeBallDouble(Double radius) {
         return (4.0 / 3.0) * Pi * (radius * radius * radius); // Возвращение объема
