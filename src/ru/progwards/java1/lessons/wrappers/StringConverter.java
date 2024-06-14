@@ -62,11 +62,11 @@ class AccuracyDoubleFloat {
     static final double PI = 3.14; // Объявление константы свойствами класса
 
     public static Double volumeBallDouble(Double radius) {
-        return (4.0 / 3.0) * PI * (radius * radius * radius); // Возвращение объема
+        return (4.0 / 3.0) * PI * Math.pow(radius, 3); // Возвращение объема
     }
 
     public static Float volumeBallFloat(Float radius) {
-        return (4.0f / 3.0f) * (float) PI * (radius * radius * radius); // Возвращение объема
+        return (float) ((4.0f / 3.0f) * PI * Math.pow(radius, 3)); // Возвращение объема
     }
 
     public static Double calculateAccuracy(Double radius) {
