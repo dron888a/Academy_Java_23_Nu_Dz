@@ -39,8 +39,21 @@ class NumbersRange {
         return sum;
     }
 
+    public static long sumEvenIdx(int start, int finish) {
+        long sum = 0;
+        int index = 1;
+        for (int i = start; i <= finish; i++) {
+            if (index % 2 != 0) {
+                sum += i;
+            }
+            index++;
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(sumNumbers(1, 5));
         System.out.println(sumOdd(12, 22));
+        System.out.println(sumEvenIdx(1, 5));
     }
 }
