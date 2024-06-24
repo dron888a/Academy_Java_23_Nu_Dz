@@ -57,3 +57,26 @@ class NumbersRange {
         System.out.println(sumEvenIdx(1, 5));
     }
 }
+
+class GoldenFibo {
+    public static int fiboNumber(int n) {
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+
+        int a = 1;
+        int b = 1;
+        int fib = 3;
+
+        for (int i = 3; i <= n; i++) {
+            fib = a + b;
+            a = b;
+            b = fib;
+        }
+        return fib;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(fiboNumber(10));
+    }
+}
