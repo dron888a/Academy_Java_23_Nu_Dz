@@ -19,3 +19,17 @@ public class DigitCheck {
         System.out.println(containsDigit(12345, 5));
     }
 }
+
+class NumbersRange {
+    public static long sumNumbers(int start, int finish) {
+        long sum = 0;
+        for (int i = start; i <= finish; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(sumNumbers(1, 5));
+    }
+}
