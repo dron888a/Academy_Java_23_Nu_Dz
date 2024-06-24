@@ -29,7 +29,18 @@ class NumbersRange {
         return sum;
     }
 
+    public static long sumOdd(int start, int finish) {
+        long sum = 0;
+        for (int i = start; i <= finish; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         System.out.println(sumNumbers(1, 5));
+        System.out.println(sumOdd(12, 22));
     }
 }
