@@ -6,6 +6,11 @@ public class DigitCheck {
             throw new IllegalArgumentException("The digit must be between 0 and 9.");
         }
 
+        // Если number равен 0, то проверяем digit отдельно
+        if (number == 0) {
+            return digit == 0;
+        }
+
         // Преобразуем number в положительное, если оно отрицательное
         number = Math.abs(number);
 
