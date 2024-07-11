@@ -2,21 +2,28 @@ package ru.progwards.java1.lessons.cycles;
 
 public class DigitCheck {
     public static boolean containsDigit(int number, int digit) {
-        if (number == digit) {
-            return true;
+        if (digit < 0 || digit > 9) {
+            throw new IllegalArgumentException("The digit must be between 0 and 9.");
         }
 
-        while (number != 0) {
-            if (number % 10 == digit)
-                return true;
-            else
-                number /= 10;
+        // Преобразуем number в положительное, если оно отрицательное
+        number = Math.abs(number);
+
+        // Проверяем каждую цифру числа
+        while (number > 0) {
+            int currentDigit = number % 10; // Получаем последнюю цифру числа
+            if (currentDigit == digit) {
+                return true; // Если нашли цифру, возвращаем true
+            }
+            number /= 10; // Удаляем последнюю цифру из числа
         }
-                return false;
+
+        return false; // Если не нашли цифру, возвращаем false
     }
 
     public static void main(String[] args) {
-        System.out.println(containsDigit(12345, 5));
+        // Примеры использования функции
+        System.out.println(containsDigit(12345, 3)); // true
     }
 }
 
